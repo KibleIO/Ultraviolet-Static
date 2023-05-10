@@ -6,76 +6,184 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Ultraviolet | Sophisticated Web Proxy</title>
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
     />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
+    <style>
+	/*https://medium.com/swlh/how-to-create-your-first-login-page-with-html-css-and-javascript-602dd71144f1*/
+  
+	html {
+	  height: 100%;
+	}
+  
+	body {
+	  height: 100%;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	  background: #020202;
+	}
+  
+	#login-error-msg-holder {
+	  width: 100%;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+  
+	#error-msg-second-line {
+	  display: block;
+	}
+  
+	#login-form {
+	  width: 100%;
+	  align-self: flex-start;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+  
+	.login-form-field::placeholder {
+	  color: #3a3a3a;
+	}
+  
+	.login-form-field {
+	  width: 70%;
+	  border: none;
+	  border-bottom: 1px solid #3a3a3a;
+	  margin-bottom: 10px;
+	  border-radius: 3px;
+	  outline: none;
+	  padding: 0px 0px 5px 5px;
+	}
+  
+	.login-form-submit {
+	  margin-top: 20px;
+	  padding: 0.75rem 1rem;
+	  border: none;
+	  border-radius: 10px;
+	  color: white;
+	  font-weight: bold;
+	  cursor: pointer;
+	  outline: none;
+	}
+  
+	.alien-form {
+	  background: linear-gradient(180deg, #21d95e 0%, #189e7d 100%);
+	}
+  
+	.alien-form:hover {
+	  background: #21d95e;
+	}
+  
+	.alien-form:active {
+	  background: #189e7d;
+	}
+  
+	.kible-form {
+	  background: linear-gradient(180deg, #00baf4 0%, #008eff 100%);
+	}
+  
+	.kible-form:hover {
+	  background: #35ceff;
+	}
+  
+	.kible-form:active {
+	  background: #3392ff;
+	}
+  
+	form {
+	  width: 100%;
+	}
+  
+	.form-control {
+	  padding: 0.75rem 1rem;
+	  height: calc(1.75em + 1.5rem + 4px);
+	  background: #1a1a1a;
+	  border: 2px solid #333333;
+	  border-radius: 10px;
+	  color: #cccccc;
+	}
+  
+	.form-control.alien:focus {
+	  background: #1a1a1a;
+	  border: 2px solid #21d95e;
+	  border-radius: 10px;
+	  color: #cccccc;
+	  box-shadow: none;
+	}
+  
+	.form-control.kible:focus {
+	  background: #1a1a1a;
+	  border: 2px solid #ffffff;
+	  border-radius: 10px;
+	  color: #cccccc;
+	  box-shadow: none;
+	}
+  
+	.kible-link {
+	  text-decoration: none;
+	  color: #00baf4;
+	  text-align: center;
+	  margin: auto;
+	}
+  
+	.kible-link:hover {
+	  color: #35CEFF;
+	}
+  
+	.alien-link {
+	  text-decoration: underline;
+	  color: #59ff90;
+	  text-align: center;
+	  margin: auto;
+	}
+  
+	.alien-link:hover {
+	  color: #9CFFBD;
+	}
+  
+	.card {
+	  background-color: transparent;
+	  border: 0;
+	}
+  
+	.h2 {
+	  margin-bottom: 3rem;
+	}
+  
+	.warning {
+	  color: #cc5f29;
+	}
+      </style>
+    <title>Alienhub</title>
     <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="shortcut icon" href="icon.png" />
     <link rel="stylesheet" href="index.css" />
-    <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
+    <script src="website.bundle.js" defer></script>
+    <script src="bootstrap.config.js" defer></script>
     <script src="index.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Ultraviolet (Web Proxy)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I unblock sites using Ultraviolet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if Ultraviolet is blocked or not working?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
-            }
-          }
-        ]
-      }
-    </script>
   </head>
 
   <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>Ultraviolet | TN</h1>
-    </div>
-    <div class="flex-center desc">
-      <p>
-        Ultraviolet is highly sophisticated proxy used for evading internet
-        censorship.
-      </p>
-    </div>
+	<div class="card m-3" style="max-width: 23rem;">
+	      
+	<div
+	title="Logo"
+	class="flex-center logo-wrapper header-center"
+      >
+	<img class="logo" src="logo.png" />
+	<h1></h1>
+      </div>
+      <div class="flex-center desc">
+	<p>
+	</p>
+      </div>
 
     <form id="uv-form" class="flex-center">
       <input
@@ -83,38 +191,8 @@
         value="https://www.google.com/search?q=%s"
         type="hidden"
       />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
+      <input id="uv-address" type="text" placeholder="Search the universe" class="form-control alien"/>
     </form>
-    <div class="desc left-margin">
-      <p id="uv-error"></p>
-      <pre id="uv-error-code"></pre>
-    </div>
-    <footer>
-      <a
-        title="The TitaniumNetwork GitHub organization"
-        href="https://github.com/titaniumnetwork-dev"
-        >TitaniumNetwork</a
-      >
-      <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-        >Discord</a
-      >
-      <a
-        title="The TompHTTP GitHub organization"
-        href="https://github.com/tomphttp"
-        >TompHTTP</a
-      >
-      <a
-        title="The official deployment repository for Ultraviolet"
-        href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-        >GitHub</a
-      >
-      <a
-        title="License information"
-        href="credits.html"
-        style="margin-left: auto"
-        >Credits</a
-      >
-      <span>Ultraviolet &copy; TN 2023</span>
-    </footer>
+</div>
   </body>
 </html>
